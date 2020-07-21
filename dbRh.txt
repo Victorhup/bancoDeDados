@@ -1,0 +1,44 @@
+//Criando banco de dados 
+
+create database db_rh; 
+
+//Criando Tabela
+ 
+use db_rh; 
+
+create table tb_funcionarios (
+id bigint (5) auto_increment,
+nome varchar (30), 
+cargo varchar (25),
+cpf bigInt (11),
+salário real (8),  
+primary key (id) 
+); 
+
+//Consultando tabela 
+Select * From tb_funcionarios 
+
+//Populando tabelas 
+
+insert in tb_funcionarios (nome, cargo, cpf, salário) values ("Victor", "Dev Junior", 44433322211, 4500)
+insert in tb_funcionarios (nome, cargo, cpf, salário) values ("Bianca", "Recepcionista", 55533322211, 1900)
+insert in tb_funcionarios (nome, cargo, cpf, salário) values ("Maria", "Recepcionista", 66633322277, 1900)
+insert in tb_funcionarios (nome, cargo, cpf, salário) values ("Beatriz", "Dev Pleno", 69683322211, 6500)
+insert in tb_funcionarios (nome, cargo, cpf, salário) values ("Anderson", "Dev Pleno", 77777777777, 6500)
+insert in tb_funcionarios (nome, cargo, cpf, salário) values ("Raquel", "Dev Sênior", 88888888888, 8500)
+insert in tb_funcionarios (nome, cargo, cpf, salário) values ("Mario", "Suporte técnico", 12121212121, 2700)
+insert in tb_funcionarios (nome, cargo, cpf, salário) values ("Elizabete", "Auxiliar de lmpeza", 44433322211, 1500)
+insert in tb_funcionarios (nome, cargo, cpf, salário) values ("Jorge", "Segurança", 13141516182, 2000)
+insert in tb_funcionarios (nome, cargo, cpf, salário) values ("Lucas", "Dev Junior", 47777322211, 4500)
+insert in tb_funcionarios (nome, cargo, cpf, salário) values ("Thiago", "Dev Junior", 44433322211, 4500)
+insert in tb_funcionarios (nome, cargo, cpf, salário) values ("Samer", "Dev Junior", 22233322211, 4500)
+insert in tb_funcionarios (nome, cargo, cpf, salário) values ("Yannick", "Dev Junior", 45257788888, 4500)
+insert in tb_funcionarios (nome, cargo, cpf, salário) values ("Maicon", "Auxiliar de limpeza", 16078888888, 1500) 
+
+//Consultando tabela 
+Select * From tb_funcionarios 
+
+//Selecionando salários maior que 2000 
+Select * from tb_funcionarios where salario >= 2000 
+//Selecionando salários menor que 2000
+Select * from tb_funcionarios where salario <=2000

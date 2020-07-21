@@ -1,0 +1,55 @@
+//Criando banco de dados 
+
+create database db_escola; 
+
+//Criando Tabela
+ 
+use db_escola; 
+
+create table tb_alunos (
+id bigint (5) auto_increment,
+nome varchar (40), 
+sexo varchar (15),
+serie varchar (15),
+nota int (2), 
+sit boolean, 
+primary key (id)
+
+); 
+//Consultando tabela 
+
+select * from tb_alunos 
+
+//Populando tabela
+insert into tb_alunos(nome, sexo, serie, nota, sit) values ("Klebér", "Masculino", "5B", 5, true) 
+insert into tb_alunos(nome, sexo, serie, nota, sit) values ("Vanessa", "Feminino", "5B", 5, true)
+insert into tb_alunos(nome, sexo, serie, nota, sit) values ("Claudia", "Feminino", "5B", 6, true)
+insert into tb_alunos(nome, sexo, serie, nota, sit) values ("Maria", "Feminino", "5B", 4, true)
+insert into tb_alunos(nome, sexo, serie, nota, sit) values ("Lorena", "Feminino", "5B", 3, true)
+insert into tb_alunos(nome, sexo, serie, nota, sit) values ("Victor", "Masculino", "5B", 6, true)
+insert into tb_alunos(nome, sexo, serie, nota, sit) values ("João", "Masculino", "5B", 7, true)
+insert into tb_alunos(nome, sexo, serie, nota, sit) values ("Walter", "Masculino", "5B", 7, true)
+insert into tb_alunos(nome, sexo, serie, nota, sit) values ("Laisa", "Feminino", "5B", 7, true)
+insert into tb_alunos(nome, sexo, serie, nota, sit) values ("Mônica", "Feminino", "5B", 3, true)
+insert into tb_alunos(nome, sexo, serie, nota, sit) values ("Hector", "Masculino", "5B", 7, true)
+insert into tb_alunos(nome, sexo, serie, nota, sit) values ("Beatriz", "Feminino", "5B", 10, true)
+insert into tb_alunos(nome, sexo, serie, nota, sit) values ("Daniela", "Feminino", "5B", 9, true)
+insert into tb_alunos(nome, sexo, serie, nota, sit) values ("Luis", "Masculino", "5B", 9, true)
+insert into tb_alunos(nome, sexo, serie, nota, sit) values ("Lucas", "Masculino", "5B", 10, true) 
+
+//Consultando tabela 
+select * from tb_alunos 
+
+//Exibindo alunos com a nota maior que 7 
+
+select * from tb_alunos where id >=12 
+
+//Exibindo alunos com a nota menor que 7 
+
+select * from tb_alunos where id <12
+
+
+
+
+
+

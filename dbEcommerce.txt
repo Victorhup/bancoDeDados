@@ -1,0 +1,51 @@
+//Criando banco de dados 
+
+Create database db_ecommerce; 
+//Criando Tabela
+ 
+use db_ecommerce; 
+
+create table tb_estoque (
+id bigint (5) auto_increment,
+marca varchar (30), 
+item varchar (25),
+modelo varchar (25),
+preço real (2), 
+ativo boolean, 
+primary key (id)
+
+); 
+//Consultando tabela 
+
+select * from tb_estoque 
+
+//Populando tabela 
+
+insert into tb_alunos(marca, item, modelo, preço, ativo) values ("Nike", "camiseta", "modelo1", 100, true)
+insert into tb_alunos(marca, item, modelo, preço, ativo) values ("Nike", "camiseta", "camiseta esporte", 100, true)
+insert into tb_alunos(marca, item, modelo, preço, ativo) values ("Adidas", "camiseta", "camiseta braba", 90, true)
+insert into tb_alunos(marca, item, modelo, preço, ativo) values ("Puma", "camiseta", "camisetaX4", 80, true)
+insert into tb_alunos(marca, item, modelo, preço, ativo) values ("Under Armour", "camiseta", "camiseta time", 85, true)
+insert into tb_alunos(marca, item, modelo, preço, ativo) values ("Nike", "calças", "moletom1", 100, true)
+insert into tb_alunos(marca, item, modelo, preço, ativo) values ("Nike", "calças", "esporte 1", 180, true)
+insert into tb_alunos(marca, item, modelo, preço, ativo) values ("Adidas", "calças", "moletom2", 200, true)
+insert into tb_alunos(marca, item, modelo, preço, ativo) values ("Adidas", "calças", "modelo1", 200, true)
+insert into tb_alunos(marca, item, modelo, preço, ativo) values ("Puma", "calças", "calça jogger", 190, true)
+insert into tb_alunos(marca, item, modelo, preço, ativo) values ("Adidas", "tênis", "Lite racer", 190, true)
+insert into tb_alunos(marca, item, modelo, preço, ativo) values ("Adidas", "tênis", "Jordan 1", 599, true)
+insert into tb_alunos(marca, item, modelo, preço, ativo) values ("Nike", "tênis", "Jordan 2", 699, true)
+insert into tb_alunos(marca, item, modelo, preço, ativo) values ("Nike", "tênis", "ultraboost", 600, true)
+insert into tb_alunos(marca, item, modelo, preço, ativo) values ("Nike", "tênis", "Westbrook", 550, true) 
+
+//Consultando tabela 
+
+select * from tb_estoque 
+
+//Selecionando produtos que custam mais de 500,00 
+
+select * from tb_estoque where preço >=500 
+
+//Selecionando produtos que custam menos de 500,00 
+select * from tb_estoque where preço <= 500
+
+
